@@ -42,8 +42,8 @@
 <body>
 <nav><a href="./">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="official-rules.html">Official Rules</a><a href="draw-algorithm.html">Draw Algorithm</a></nav>
 <h1>Lock In, Son — Privacy Policy</h1>
-<p class="eff"><strong>Effective date:</strong> November 2, 2026<br>
-<strong>Last updated:</strong> November 2, 2026</p>
+<p class="eff"><strong>Effective date:</strong> November 23, 2026<br>
+<strong>Last updated:</strong> November 24, 2026</p>
 <p>This policy explains what information Zhan&amp;Rushman LLC, a Texas limited liability company ("we", "us"), collects through the Lock In, Son app (called 最严厉的爸爸 and other localized names in some App Stores) and related services (together, the "Service"), how we use it, and the choices you have.</p>
 <p>The Service is for adults only (18 or older, or the age of majority where you live). It is not directed to children, and we do not knowingly collect information from anyone under that age.</p>
 <h2>1. The short version</h2>
@@ -52,6 +52,7 @@
 <li><strong>Screen Time:</strong> we never learn which apps you chose or how you use them. Your app selection stays on your iPhone. We receive only each day's result: whether you kept your limit, how many minutes you went over, and the resulting penalty.</li>
 <li><strong>Apple Health:</strong> we only read steps and workouts, and never write to Apple Health. Individual samples stay on your iPhone. We receive only the day's total. Health data is never used for advertising or marketing and is never shared for those purposes.</li>
 <li><strong>Payments:</strong> your card number goes directly to our payment processor, Stripe. We never see or store it.</li>
+<li><strong>Usage data:</strong> the app tells Google Firebase how it is used (screens and steps reached, settings chosen such as goal type, in ranges) and when it crashes. These reports never include your goal's limit or target, the apps you limit, your health data (including whether an exercise goal was met), amounts, card details, appeal text, your name or your email, and they are not linked to your account. They are off until you say yes, and you can turn them off at any time in Settings &gt; Share usage data (section 2.5).</li>
 <li>You can export your data or delete your account in the app at any time.</li>
 </ul>
 <h2>2. Information we collect</h2>
@@ -79,13 +80,13 @@
 <tr><td>Draw entries</td><td>Whether you were eligible for a monthly draw, whether you won, and the payout status</td></tr>
 <tr><td>Permission status</td><td>Whether Screen Time, Apple Health and notification access are on, so that days without access are not charged and the app can warn you</td></tr>
 <tr><td>Identifiers</td><td>Your account ID, and a push-notification token for your installation of the app</td></tr>
-<tr><td>Technical information</td><td>App version, and diagnostic data collected by Google Firebase software in the app (not linked to your identity)</td></tr>
+<tr><td>Technical information</td><td>App version, and diagnostic data collected by Google Firebase software in the app (not linked to your identity). Usage analytics and crash reports are described in section 2.5.</td></tr>
 </table>
 <h3>2.3 Information we do not collect</h3>
 <ul>
 <li>Which apps or websites you select or use, or how long you use any individual app.</li>
 <li>Individual Apple Health samples, their sources, or your other health data.</li>
-<li>Your precise or approximate location (the app does not use Location Services).</li>
+<li>Your precise location, or your approximate location from Location Services (the app does not use Location Services). For usage analytics, Google Firebase estimates a general location, such as your country, from your IP address (section 2.5).</li>
 <li>Your photos (the app can only <em>add</em> a progress image to your library when you choose "Save Image").</li>
 <li>Your contacts, camera, microphone or advertising identifier.</li>
 </ul>
@@ -93,7 +94,19 @@
 <ul>
 <li><strong>Stripe</strong> collects your card details when you add a card or use Apple Pay. If you win a prize and choose bank transfer, Stripe collects identity and tax information (such as IRS Form W-9) on its own pages and shares with us only what we need to pay the prize and meet tax-reporting duties. Stripe's handling is governed by the <a href="https://stripe.com/privacy">Stripe Privacy Policy</a>.</li>
 <li><strong>Apple</strong> processes Sign in with Apple and Apple Pay under Apple's privacy policy.</li>
+<li><strong>Google</strong> provides Firebase Analytics and Firebase Crashlytics, described in section 2.5.</li>
 </ul>
+<h3>2.5 Usage analytics and crash reports</h3>
+<p><strong>Usage analytics.</strong> The app uses Google Firebase Analytics, a service of Google LLC (United States) that processes this data for us as our service provider, to learn how the app is used: which screens and steps people reach (for example, which setup step, whether a goal was created, whether a permission was granted or a card was added) and which settings they choose, such as the type of goal (app limit, steps or workout) and the penalty level (low, standard or high compared with the default, never the amount), and whether a penalty charge was shown on screen for an app-limit goal (never the amount). Firebase also records standard device and app information: the device model, operating-system version, app version and app language, and an app-instance identifier that Firebase generates for this installation of the app. Like any internet service, Google receives your device's IP address, which Firebase uses to estimate a general location such as your country, region or city.</p>
+<p><strong>What usage analytics never include.</strong> Your goal's limit or target, which apps you limit, your health data, including whether an exercise goal was met, exact step or workout numbers or app-use minutes, money amounts, card or payment details, the text of an appeal, your name or email address, your supervisor's details, draw entry IDs, or anything you type. We do not give Firebase your account ID, name or email, so usage analytics are not linked to your account.</p>
+<p><strong>Crash reports.</strong> Wherever usage analytics are on, the app also uses Google Firebase Crashlytics, another Google LLC service. If the app crashes, it sends a crash report: where in the app's code the crash happened, the device model, operating-system version and app version, technical details of the app's state at that moment, an identifier Crashlytics generates for this installation, and the usage analytics events from just before the crash. We do not add your goal's limit or target, health data, amounts, payment details, name, email or anything you type to crash reports, and they are not linked to your account.</p>
+<p><strong>Your choice.</strong></p>
+<ul>
+<li><strong>Usage analytics and crash reports are off until you agree.</strong> Before anything is reported, the app asks you once, with two equal choices, and sends nothing unless you say yes. Because the app uses Firebase for sign-in and syncing, the Firebase software stores an analytics identifier and a crash-reporting identifier on your device when the app starts, before you answer. Until you say yes, the app does not send them or any usage analytics or crash reports. The app works the same whether you say yes or no.</li>
+<li><strong>If you say no, the app remembers it</strong> and does not ask again.</li>
+<li><strong>You can change your choice at any time</strong> in Settings &gt; Share usage data. Turning it off stops usage analytics and crash reports and resets the analytics identifier and deletes from your device any usage data not yet sent and any crash reports not yet sent. Data already sent is kept for about the periods in section 6; because it is not linked to your account, we cannot look it up by your name or email.</li>
+</ul>
+<p><strong>No advertising, no tracking.</strong> We use usage analytics and crash reports only to understand, in aggregate, how the app is used and to find and fix problems, never for advertising or to build a profile of you. The app does not use the advertising identifier (IDFA) and turns off Google's advertising features, and we do not sell or share this data for advertising or use it to track you across other companies' apps or websites. Google describes how Firebase handles data in its <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
 <h2>3. How we use information</h2>
 <p>We use the information above only to:</p>
 <ol>
@@ -102,16 +115,18 @@
 <li>run the monthly sweepstakes: determine eligibility, draw and check winners, pay prizes, and meet tax-reporting duties;</li>
 <li>send notifications you have allowed, and texts to a supervisor who has accepted your invitation;</li>
 <li>keep the Service secure, prevent fraud and abuse, and fix problems;</li>
-<li>comply with law and enforce our Terms of Service.</li>
+<li>comply with law and enforce our Terms of Service;</li>
+<li>understand, in aggregate, how the app is used, and find and fix crashes, using the usage analytics and crash reports in section 2.5.</li>
 </ol>
 <p>We do <strong>not</strong> use your information for advertising, profiling, or selling, and we do not use health or fitness information for marketing or data mining.</p>
 <h2>4. Legal bases (EEA, UK and Switzerland)</h2>
-<p>If you use the Service from the European Economic Area, the United Kingdom or Switzerland, we rely on: performance of our contract with you (section 3, items 1–4); your consent for health data, notifications and supervisor texts, which you can withdraw at any time; our legitimate interests in security and fraud prevention (item 5); and our legal obligations (item 6).</p>
+<p>If you use the Service from the European Economic Area, the United Kingdom or Switzerland, we rely on: performance of our contract with you (section 3, items 1–4); your consent for health data, notifications, supervisor texts, and usage analytics and crash reports (item 7, asked as described in section 2.5), which you can withdraw at any time; our legitimate interests in security and fraud prevention (item 5); and our legal obligations (item 6).</p>
 <h2>5. How we share information</h2>
 <p>We share information only with:</p>
 <table>
 <tr><th>Recipient</th><th>What</th><th>Why</th></tr>
 <tr><td>Google (Firebase / Google Cloud, United States)</td><td>The information in section 2</td><td>Hosting, database, sign-in, push notifications and remote configuration</td></tr>
+<tr><td>Google (Firebase Analytics and Firebase Crashlytics, Google LLC, United States)</td><td>The usage analytics and crash reports in section 2.5, which are not linked to your account</td><td>Understanding how the app is used and fixing crashes; never advertising</td></tr>
 <tr><td>Stripe</td><td>Payment and payout information</td><td>Charging penalties and paying prizes</td></tr>
 <tr><td>Twilio</td><td>Your supervisor's mobile number and the text of each message</td><td>Sending texts to your supervisor</td></tr>
 <tr><td>PayPal</td><td>Your PayPal email and the prize amount</td><td>Only if you choose a PayPal prize payout</td></tr>
@@ -119,7 +134,7 @@
 <tr><td>Authorities or others</td><td>As required</td><td>Where the law requires it, or to protect rights, safety and property</td></tr>
 <tr><td>A successor</td><td>All information</td><td>If we are involved in a merger, acquisition or sale of assets, subject to this policy</td></tr>
 </table>
-<p>These service providers may use the information only to provide services to us. We do not sell or "share" (as California law defines it) personal information.</p>
+<p>These service providers may use the information only to provide services to us, and must protect it as carefully as this policy describes. We do not sell or "share" (as California law defines it) personal information.</p>
 <p><strong>Your supervisor</strong> receives texts that show the name you gave them and: that you missed your goal on a given day and by how much (minutes over your app limit, or steps or workout minutes short); that you chose to keep using your limited apps past the limit, with your per-minute price and that day's cap; and that you completed a 21-day challenge. They never see which apps you limit, your health data, your charge totals or your payment details.</p>
 <p><strong>Winners:</strong> if someone asks for a month's winners list as the Official Rules allow, we give the winners' first names and states. The public draw verification list uses random entry IDs, never names or account details.</p>
 <h2>6. How long we keep information</h2>
@@ -128,6 +143,8 @@
 <li><strong>Charge and confirmation records:</strong> after deletion, kept for 7 years in de-identified form (without your account ID or contact details) for accounting, tax and payment-dispute purposes.</li>
 <li><strong>Prize and tax records:</strong> 7 years after the year the prize was paid.</li>
 <li><strong>Backups:</strong> deleted information may remain in backups for up to 35 days.</li>
+<li><strong>Usage analytics:</strong> Google Analytics keeps usage events for about 2 months, and the data tied to an app-instance identifier until about 2 months after that installation was last active; it deletes expired data in a monthly process, so some data can last a few weeks longer. After that, only aggregated totals remain.</li>
+<li><strong>Crash reports:</strong> Crashlytics keeps crash reports and their identifiers for 90 days, then starts removing them from its live and backup systems.</li>
 <li>We may keep information longer where the law requires.</li>
 </ul>
 <h2>7. Your choices and rights</h2>
@@ -137,13 +154,14 @@
 <li><strong>Correct:</strong> you can change your profile, receipt email and goals in the app, or contact us.</li>
 <li><strong>Health and Screen Time access:</strong> you can turn these off at any time in iOS Settings. Days without access are recorded as unmonitored and are not charged, but your challenge progress may be lost.</li>
 <li><strong>Notifications:</strong> turn them off in iOS Settings or in the app.</li>
+<li><strong>Usage analytics and crash reports:</strong> turn them off or on in Settings &gt; Share usage data (section 2.5).</li>
 <li><strong>Supervisor texts:</strong> your supervisor can reply STOP to stop all texts.</li>
 </ul>
 <p>Depending on where you live (for example California, Texas, other U.S. states, the EEA or the UK), you may have the right to know, access, correct, delete or port your information, and to object to or restrict its use. To exercise these rights, use the in-app tools or email support@zhanrushmanllc.com. If we deny your request, you can appeal by replying to our answer. We will not discriminate against you for exercising these rights. You may also complain to your state attorney general or local data-protection authority.</p>
 <h2>8. Security</h2>
 <p>Information is encrypted in transit and stored with Google Cloud. Access is limited to people who need it to run the Service. No system is perfectly secure, so please keep your sign-in details safe.</p>
 <h2>9. International transfers</h2>
-<p>We are based in the United States and store data in the United States (Google Cloud region nam5). If you use the Service from outside the United States, your information is transferred there. Where the law requires a safeguard for this transfer, we rely on the European Commission's Standard Contractual Clauses, and their UK and Swiss equivalents, in our agreements with our service providers.</p>
+<p>We are based in the United States and store data in the United States (Google Cloud region nam5). If you use the Service from outside the United States, your information is transferred there. Usage analytics and crash reports are processed by Google on its servers, which may be in the United States or other countries. Where the law requires a safeguard for this transfer, we rely on our service providers' certification under the EU-U.S. Data Privacy Framework, its UK Extension and the Swiss-U.S. Data Privacy Framework (Google LLC is certified), and on the Standard Contractual Clauses and their UK and Swiss equivalents included in their data processing terms.</p>
 <h2>10. Changes</h2>
 <p>If we make material changes, we will tell you in the app before they take effect. The date at the top shows when this policy last changed.</p>
 <h2>11. Contact</h2>
